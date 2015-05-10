@@ -1,0 +1,7 @@
+<% @musics.each do |music| %>
+	<h2><%= link_to music.title, music %></h2>
+	<p><%= music.artist %></p>
+	<p><%= music.url %></p>
+<% end %>
+
+<%= link_to "Add new Music", new_music_path %>

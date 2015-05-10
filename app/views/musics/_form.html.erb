@@ -1,0 +1,7 @@
+<%= simple_form_for @music, input_html: {class: 'form-horizontal'} do |f| %>
+	<%= f.input :title, label: "Music Title" %>
+	<%= f.input :artist, label: "Artist" %>
+	<%= f.input :url, label: "Link to Music" %>
+	<br>
+	<%= f.button :submit %>
+<% end %>
